@@ -1,0 +1,251 @@
+.my-body{
+  background-color: lightgrey;
+  font-family: monospace;
+  background-color: lightblue;
+  background-image: url(Background-Body.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.my-font{
+  font-family: 'Lalezar', cursive;
+}
+.my-font1{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.card{
+  margin: 300px 45px 0px 200px;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  width:300px;
+  height:400px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition:0.5s;
+}
+.card .front{
+  position:absolute;
+  border: 5px;
+  width:50%;
+  height:100%;
+  background:  #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.card:hover .front{
+  transform: rotateX(-180deg);
+}
+.card .back{
+  position:absolute;
+  border-radius: 10%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:  #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+.card .back:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left: -50%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+}
+.card:hover .back{
+  transform: rotateX(0deg);
+}
+.card .back .details{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .back .details h2{
+  margin:0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.card .back .details h2 span{
+  color: #a7a7a7;
+  font-size: 16px;
+}
+.social-icons{
+  padding:10px 0;
+}
+.social-icons a{
+  display:inline-block;
+  width:36px;
+  height: 36px;
+  text-align: center;
+  background:#262626;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.social-icons a .fa{
+  line-height: 36px;
+}
+.social-icons a:hover{
+  background: #e91e63;
+}
+.my-data{
+  margin-top : 10px;
+}
+.quote_box{
+  margin: 150px 50px 0px 100px;
+  height: 350px;
+  width: 450px;
+  color: white;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transition: 0.5s;
+}
+
+.quote_box:before{
+  content: '';
+  position: absolute;
+  top :0 ;
+  left: 0;
+  width: 100%;
+  height: 100% ;
+  background: transparent;
+  border-top: 20px solid #fff;
+  border-left: 20px solid #fff;
+  box-sizing: border-box;
+}
+.quote_box:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-bottom: 20px solid #fff;
+  border-right: 20px solid #fff;
+  box-sizing: border-box;
+}
+.quote_box:hover .quotes{
+  transform: rotateY(30deg) skewY(-5deg);
+}
+ .quotes{
+  position: absolute;
+  top: 30px;
+  left:-30px;
+  background: #262626;
+  width: calc(100% + 60px);
+  height:  calc(100% - 60px);
+  transition: 0.5s;
+}
+.quotes div{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 40px 80px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.quotes div h1{
+  margin: 0 0 20px;
+  padding:0;
+  color:#fff;
+  }
+.quotes div p{
+    margin: 0 0 20px;
+    padding:0;
+    color:#fff;
+    font-size: 18px;
+}
+.fa{
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  color: #262626;
+  text-align: center;
+  line-height: 80px !important;
+  font-size: 40px !important;
+}
+.fa1{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fa2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.my-box1{
+  margin: 100px 110px 110px 0px;
+  min-width: 450px;
+  height: 800px;
+  background-size: contain;
+  background-image: url(Background-Box.jpg);
+  color: black;
+  font-family: 'Courgette', cursive;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px;
+}
+.skills {
+  height:480px;
+  margin: 60px auto;
+}
+.skills li{
+  margin: 28px 0;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 6px;
+  border : 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+  height: 5px;
+  float: left;
+  background: #2187e7;
+}
+.html {width: 90%; }
+.css {width: 85%; }
+.bs {width: 80%; }
+.py {width: 85%; }
+.c {width: 95%; }
+.cpp {width: 95%; }
+.js {width: 45%; }
+
+.my-box2{
+  margin: 100px 0px 110px 0px;
+  height: 800px;
+  font-size: 15px;
+  background-image: url(Background-Box.jpg);
+  background-size: cover;
+  font-family: 'Mitr', sans-serif;
+  color: black;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px;
+}
+.my-footer{
+  padding-bottom: 0px;
+}
