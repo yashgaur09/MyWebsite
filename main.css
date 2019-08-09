@@ -29,7 +29,7 @@
 }*/
 .quote_box{
   min-height: 100px;
-  margin-top: 3%;
+  margin-top: 0%;
   margin: 200px 0px 100px 0px;
   height: 250px;
   width: 350px;
@@ -151,7 +151,7 @@
   border-radius: 10%;
   top:0;
   left:0;
-  width:75%;
+  width:90%;
   height:100%;
   background:  #000;
   backface-visibility: hidden;
@@ -216,25 +216,12 @@
 
 .my-box1{
   margin: 0px 100px 110px 0px;
-  min-width: 450px;
+  min-width: 400px;
   height: 800px;
   background-size: contain;
   background-image: url(Background-Box.jpg);
   color: black;
   font-family: 'Courgette', cursive;
-  border-color: white;
-  border-width: 5px;
-  border-radius: 10px;
-}
-
-.my-box2{
-  margin: 0px 0px 110px 100px;
-  min-width: 450px;
-  height: 800px;
-  background-size: contain;
-  background-image: url(Background-Box.jpg);
-  color: black;
-  font-family: 'Mitr', sans-serif;
   border-color: white;
   border-width: 5px;
   border-radius: 10px;
@@ -263,14 +250,16 @@
 .css {width: 85%; }
 .bs {width: 80%; }
 .py {width: 85%; }
-.c {width: 95%; }
+.c6 {width: 95%; }
 .cpp {width: 95%; }
 .js {width: 45%; }
 
 .my-box2{
-  margin: 550px 0px 110px 0px;
+  margin: 0px 0px 110px 0px;
   height: 800px;
+  width:450px;
   font-size: 15px;
+  background-size: contain;
   background-image: url(Background-Box.jpg);
   background-size: cover;
   font-family: 'Mitr', sans-serif;
