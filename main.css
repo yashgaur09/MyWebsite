@@ -1,3 +1,11 @@
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
 .my-body{
   background-color: lightgrey;
   font-family: monospace;
@@ -14,100 +22,17 @@
   font-family: 'Libre Baskerville', serif;
 }
 
-.card{
-  margin: 300px 45px 0px 200px;
-  position:absolute;
-  transform: translate(-50%,-50%);
-  width:300px;
-  height:400px;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  transition:0.5s;
-}
-.card .front{
-  position:absolute;
-  border: 5px;
-  width:50%;
-  height:100%;
-  background:  #000;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-.card:hover .front{
-  transform: rotateX(-180deg);
-}
-.card .back{
-  position:absolute;
-  border-radius: 10%;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:  #000;
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
-  transition: 0.5s;
-}
-.card .back:before{
-  content:'';
-  position: absolute;
-  top:0;
-  left: -50%;
-  width:100%;
-  height:100%;
-  background: rgba(255,255,255,0.1);
-}
-.card:hover .back{
-  transform: rotateX(0deg);
-}
-.card .back .details{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.card .back .details h2{
-  margin:0;
-  padding: 0;
-  font-size: 24px;
-  color: #fff;
-}
-.card .back .details h2 span{
-  color: #a7a7a7;
-  font-size: 16px;
-}
-.social-icons{
-  padding:10px 0;
-}
-.social-icons a{
-  display:inline-block;
-  width:36px;
-  height: 36px;
-  text-align: center;
-  background:#262626;
-  color:#fff;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-.social-icons a .fa{
-  line-height: 36px;
-}
-.social-icons a:hover{
-  background: #e91e63;
-}
-.my-data{
-  margin-top : 10px;
-}
+/*.my-box {
+  margin: 150px 200px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  color: white;
+}*/
 .quote_box{
-  margin: 150px 50px 0px 100px;
-  height: 350px;
-  width: 450px;
+  min-height: 100px;
+  margin-top: 3%;
+  margin: 200px 0px 100px 0px;
+  height: 250px;
+  width: 350px;
   color: white;
   border-color: white;
   border-width: 5px;
@@ -183,6 +108,7 @@
   line-height: 80px !important;
   font-size: 40px !important;
 }
+
 .fa1{
   position: absolute;
   top: 0;
@@ -194,14 +120,121 @@
   right: 0;
   z-index: 1;
 }
+
+.card{
+  min-height: 100px;
+  margin-top: 3%;
+  margin: 300px 0px 0px 200px;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  width:300px;
+  height:400px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition:0.5s;
+}
+.card .front{
+  position:absolute;
+  border: 5px;
+  width:50%;
+  height:100%;
+  background:  #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.card:hover .front{
+  transform: rotateX(-180deg);
+}
+.card .back{
+  position:absolute;
+  border-radius: 10%;
+  top:0;
+  left:0;
+  width:75%;
+  height:100%;
+  background:  #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+.card .back:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left: -50%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0);
+}
+.card:hover .back{
+  transform: rotateX(0deg);
+}
+.card .back .details{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .back .details h2{
+  margin:0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.card .back .details h2 span{
+  color: #a7a7a7;
+  font-size: 16px;
+}
+.social-icons{
+  padding:10px 0;
+}
+.social-icons a{
+  display:inline-block;
+  width:36px;
+  height: 36px;
+  text-align: center;
+  background:#262626;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.social-icons a .fa{
+  line-height: 36px;
+}
+.social-icons a:hover{
+  background: #e91e63;
+}
+.my-data{
+  margin-top : 10px;
+}
+
 .my-box1{
-  margin: 100px 110px 110px 0px;
+  margin: 0px 100px 110px 0px;
   min-width: 450px;
   height: 800px;
   background-size: contain;
   background-image: url(Background-Box.jpg);
   color: black;
   font-family: 'Courgette', cursive;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.my-box2{
+  margin: 0px 0px 110px 100px;
+  min-width: 450px;
+  height: 800px;
+  background-size: contain;
+  background-image: url(Background-Box.jpg);
+  color: black;
+  font-family: 'Mitr', sans-serif;
   border-color: white;
   border-width: 5px;
   border-radius: 10px;
@@ -235,7 +268,7 @@
 .js {width: 45%; }
 
 .my-box2{
-  margin: 100px 0px 110px 0px;
+  margin: 550px 0px 110px 0px;
   height: 800px;
   font-size: 15px;
   background-image: url(Background-Box.jpg);
@@ -248,4 +281,8 @@
 }
 .my-footer{
   padding-bottom: 0px;
+}
+#my-body{
+  margin-left: 10%;
+  margin-right: 10%;
 }
